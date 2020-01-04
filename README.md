@@ -10,4 +10,4 @@ git clone/download this project,
 pip3 install -r requirements.txt in your virtualenv
 ## Usage
 This project is divided in two parts.
-The first part(train) is responsible for training, the second one(test) can be used to chat with.
+The first part(train.py) is responsible for training, the second one(test.py) can be used to chat with. The training data is stored in intents.json.
