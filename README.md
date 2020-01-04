@@ -6,7 +6,7 @@ The output layer produces the outputs using softmax.
 Gradients are calculated using crossentropy loss.
 The bot understands context, provided in the greeting and goodbye tags of this dataset.
 ## Installation
-git clone/download this project
+git clone/download this project,
 pip3 install -r requirements.txt in your virtualenv
 ## Usage
 This project is divided in two parts.
