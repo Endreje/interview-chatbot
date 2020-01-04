@@ -11,3 +11,5 @@ pip3 install -r requirements.txt in your virtualenv
 ## Usage
 This project is divided in two parts.
 The first part(train.py) is responsible for training, the second one(test.py) can be used to chat with. The training data is stored in intents.json.
+## Note
+This bot can be upgraded by adding more training samples or labels.
