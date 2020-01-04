@@ -1,0 +1,110 @@
+{"intents": [
+        {"tag": "greeting",
+         "patterns": ["Hi", "How are you", "Hi there?", "Hello", "Good day", "Hey", "Hey there"],
+         "responses": ["Hello, hope that you are having a good day."],
+         "context_set": "feeling"
+        },
+        {"tag": "feel better",
+         "patterns": ["Not so much", "I'm actually having a bad day", "Not so good, but ok", "Bad day", "Not so good"],
+         "responses": ["No worries, we all have and will continue having good and bad days. What's important is how we deal with both."],
+         "context_filter": "feeling"
+        },
+        {"tag": "great feeling",
+         "patterns": ["I am actually great", "I'm great, thanks for asking", "I'm feeling great", "I am good", "I'm good, thanks for asking", "I'm feeling good"],
+         "responses": ["Happy to hear that. Keep doing the same thing, it makes you feel good :)"],
+         "context_filter": "feeling"
+        },
+        {"tag": "goodbye",
+         "patterns": ["Bye", "See you later", "Goodbye", "Thank you for your time", "We will contact you in person"],
+         "responses": ["Have a nice day. Feel free to contact me at andrej.mitreski@yahoo.com for anything related to A.I."]
+        },
+        {"tag": "work exp",
+         "patterns": ["Tell me more about your work experience", "What can you tell me about your work experience", "What about you work experience", "What about your employment?", "Tell me more about your employment", "I want to know more about your employment"],
+         "responses": ["I've been professionally working for about a year now. I started working as a freelancer locally and on Freelancer providing Data Science/Machine Learning services. After that I was employed as a Machine Learning Engineer at Qpick and in the meanwhile I kept working as freelancer aswell as on a project who I belive will replace truck dispatchers."]
+        },
+        {"tag": "freelancer",
+         "patterns": ["What did you do at freelancer?", "What was your job as a freelancer?", "What skills did you use for freelancing", "What services did you provide as freelancer?"],
+         "responses": ["Most of the projects I completed were in the field of Data Science/Machine Learning. I've also built some Python programs not related to this field."]
+        },
+        {"tag": "uber",
+         "patterns": ["What is this uber for trucks?", "What do you plan do achive at uber for trucks?", "What happened in Uber for trucks?"],
+         "responses": ["This is a project I'm working on alone. The idea behind it is to replace a truck dispatcher job and bring improvement to the deliveries using sorting algorithm with the help of Google Maps API."]
+        },
+        {"tag": "lfreelancer",
+         "patterns": ["What about freelancing locally?", "What do you mean by local freelancer?", "What projects did you work on in your country?"],
+         "responses": ["I built a few projects for students in the field of I.T., some soccer predictions(classification) and last but not least, the project I like most. A POC algorithm used to better the field of A.I. based on new discovery of how the human brain perceives information."]
+        },
+        {"tag": "qpick",
+         "patterns": ["What did you do at QPick?", "How did you help QPick?", "What was your job in QPick?", "What did you do at QPick?"],
+         "responses": ["Most of my time was spent building a ML recommender system. I also worked with Django a lot, making daily updates to BitBucket. I developed stuff like payment system, charts for user interface, fixed bugs that occured during updating of the software and a lot more."]
+        },
+        {"tag": "chess",
+         "patterns": ["How long are you playing chess?", "Tell me more about your chess adventure", "I see you play chess"],
+         "responses": ["I am very interested in this game. I play it daily for almost a year now."]
+        },
+        {"tag": "lr",
+         "patterns": ["So what can you tell me about learning rate in neural networks?", "How does learning rate affect weight change?", "Tell me more about learning rate", "How does this learning rate work", "What is learning rate?", "How does learning rate work?"],
+         "responses": ["Learning rate tells the network by how much should a weight change each iteration. For example, a learning rate of 0.1 will update the weight 10% of the amount that it possibly could be updated. Using smaller learning rate usually comes with lots of iterations over the training dataset."]
+        },
+        {"tag": "upweights",
+         "patterns": ["How are weights updated?", "How do you update weights in a neural network?", "How does weight updating work?", "How to update the weights?"],
+         "responses": ["After performing backpropagation and calculating the error of your model's outputs you need to change the weights so that the network can learn. To update the weights we need to have a specified learning rate and calculated error by deriving the gradients of the network. We sum the current weight value with the output of learning rate * error * the input that caused this error."]
+        },
+        {"tag": "backprop",
+         "patterns": ["What is backpropagation?", "What is error rate?", "How is error rate calculated?", "How does backpropagation work?", "How do you calculate the error rate?", "How to get error rate?", "What is backpropagation and error rate?", "How are gradients derived in backpropagation?", "How to derive gradients?"],
+         "responses": ["You must first do a forward pass from the input to the output layer of your network. The neurons in the output layer will produce a so called 'label'. Simply just calculate the difference between the label and real output so that you can continue doing the same for the neurons in the previous layers."]
+        },
+        {"tag": "forwardprop",
+         "patterns": ["What is forwardpropagation?", "How does forwardpropagation work?", "How to do forwardpropagation?", "How to perform forwardpropagation?", "How do you perform forwardpropagation?"],
+         "responses": ["Forwardpropagation is the exact opposite of backpropagation. We do a forward pass of the inputs from the input to the output layer calculating activation of each neuron. When it gets to the output layer it produces an output(or probabilities, to calculate error rate) for every class from the training dataset."]
+        },
+        {"tag": "overfit",
+         "patterns": ["What is overfitting?", "What is this the problem with overfitting?", "How can model overfit?", "Why does model overfit?", "My neural network overfit", "How can neural network overfit?", "How do neural networks overfit?", "Why does neural network overfit?"],
+         "responses": ["Overfitting occurs when the model performs well when it is evaluated using the training set, but cannot achieve good accuracy when the test dataset is used. This kind of problem is called 'high variance' and it usually means that the model cannot generalize the insights from the training dataset. This usually happens because of bad/imbalanced data. Lots of ways to solve this, like data augmentation, dropout, regularization of your data or similar techniques."]
+        },
+        {"tag": "underfit",
+         "patterns": ["What is underfitting?", "What is this the problem with underfitting?", "How can model underfit?", "Why does model underfit?", "My neural network underfit", "How can neural network underfit?", "How do neural networks underfit?", "Why does neural network underfit?"],
+         "responses": ["Underfitting occurs when we observe that the model’s training set error is significantly larger than the expected error of an ideal model. In machine learning, when the model performs poorly even on the training set, we say that the model has a high bias. The best methods of dealing with an underfitting model is trying a bigger neural network (adding new layers or increasing the number of neurons in existing layers) or training the model a little bit longer."]
+        },
+        {"tag": "over/underfit",
+         "patterns": ["What is over and under fitting?", "What is over and under fit?", "What is over/under fitting?", "what is under/over fitting?", "How can model over/underfit?", "How can model over or underfit?", "How can model over or under fit?", "How can neural network over or under fit?", "How can model over/underfit?", "Hoes does it over or underfit?", "How can my neural network over/underfit?"],
+         "responses": ["What makes overfitting/underfitting happen is insufficient or imbalanced data or simply your neural network is bad. To find out more ask me about them separately."]
+        },
+        {"tag": "evgradients",
+         "patterns": ["What are exploding or vanishing gradients?", "What is the problem with exploding or vanishing gradients?", "What is vanishing/exploding gradient problem?", "What is exploding/vanishing gradient problem?", "How to fix exploding gradient?", "How to fix vanishing gradient?", "Exploding gradient problem", "Vanishing gradient problem"],
+         "responses": ["These problems arise during training of a deep network when the gradients are being propagated back in time all the way to the initial layer. The gradients coming from the deeper layers have to go through continuous matrix multiplications because of the chain rule, and as they approach the earlier layers, if they have small values (<1), they shrink exponentially until they vanish and make it impossible for the model to learn , this is the vanishing gradient problem. While on the other hand if they have large values (>1) they get larger and eventually blow up and crash the model, this is the exploding gradient problem. A solution to this problem would be gradient clipping."]
+        },
+        {"tag": "neuron activation",
+         "patterns": ["What are neuron activations?", "What are common neuron activations?", "What are activation functions?", "How is a neuron activated?", "Common activation functions", "Best activation functions", "Common neuron activation functions"],
+         "responses": ["Neuron activation is calculated to see if that neuron will fire or not. Most common activation functions are sigmoid, tanh, relu, leaky relu etc."]
+        },
+        {"tag": "calc gradients",
+         "patterns": ["How are gradients calculated?", "How to calculate gradients?", "How to calculate gradients with softmax?", "Calculating gradients"],
+         "responses": ["Gradient calculation starts with the output layer, than continues with the backward phase. You can use a function like softmax to calculate the loss(error) of your output. Softmax allows us to increase the output probability for a particular class in our model using backpropagation."]
+        },
+        {"tag": "bolearning",
+         "patterns": ["batch vs online learning", "What is batch learning?", "What is online learning?", "Batch and online learning", "What is batch and online learning?"],
+         "responses": ["Batch learning calculates the error rate caused by the network in one epoch, while online learning calculates the error for each training pattern."]
+        },
+        {"tag": "epoch",
+         "patterns": ["What is an epoch?", "What is one epoch in machine learning?", "Epoch in deep learning", "What is one epoch in deep learning?", "Epoch in machine learning", "What is a epoch?"],
+         "responses": ["One epochs means one run of your network on the whole dataset. So, multiple epoch will make the network 'reanalyse' the data multiple times."]
+        },
+        {"tag": "winit",
+         "patterns": ["Common weight initialization techniques", "How to initialize weights?", "How are weights initialized?", "How to initialize weights?", "How should I initialize weights?", "Techniques for initializing weights", "How to properly initialize weights?", "Best way to initialize weights"],
+         "responses": ["Proper weight initialization will improve the performance of your network. Best ways to initialize your networks weights would be Xavier or He initialization."]
+        },
+        {"tag": "dataaug",
+         "patterns": ["What is data augmentation?", "How can data augmentation help?", "When to use data augmentation", "How is data augmented?", "Why would I augment my data?", "Why would I perform data augmentation?", "When should i perform data augmentation?"],
+         "responses": ["Data augmentation can help when you have insufficient number of training samples(or bad representation of your data). You can use this technique to generate more(or better) data for your model."]
+        },
+        {"tag": "cross-correlation",
+         "patterns": ["What is cross-correlation?", "What is cross correlation?", "What does cross-correlation do?", "What does cross correlation do?", "How does cross-correlation work?", "How does cross correlation work?"],
+         "responses": ["Cross-correlation(also known as the sliding dot product) is matrix multiplication between the filters(weights) and part of an image in convolutional layers. This is what makes convolution happen."]
+        },
+        {"tag": "sobel filter",
+         "patterns": ["What is the sobel filter?", "What is sobel filter?", "Vertical sobel filter", "Horizontal sobel filter", "What is the use of sobel filter?", "How does sobel filter work?"],
+         "responses": ["As any other filter in your convolutional layer, the sobel filter has it's own particular values(weights) used for extracting features from your data(or transforming it). Feel free to google more about it and see how it performs."]
+        }
+   ]
+}
